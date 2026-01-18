@@ -14,8 +14,9 @@
 		}
 	],
   "hero": {
-    "name": "Your Name",
-    "subtitle": "I'm the Unknown Developer."
+    "name": "Arthur Sumague",
+    "subtitle": "Data Developer | Business Intelligence | Web Development",
+    "picture": "assets/cropped-pfp.jpg"
   },
   "about": {
     "title": "About me",
