@@ -3,9 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* Primary gradient */
+  --color-primary-from: 147 51 234;  /* purple-600 in RGB */
+  --color-primary-via: 219 39 119;   /* pink-600 in RGB */
+  --color-primary-to: 37 99 235;     /* blue-600 in RGB */
+  
+  /* Secondary gradient */
+  --color-secondary-from: 251 113 133;
+  --color-secondary-via: 217 70 239;
+  --color-secondary-to: 99 102 241;
+}
+
+/*Dark theme */
+[data-theme="dark"] {
+  --color-primary-from: 168 85 247;  /* Different purple */
+  --color-primary-via: 236 72 153;
+  --color-primary-to: 59 130 246;
 }
 
 @media (prefers-color-scheme: dark) {

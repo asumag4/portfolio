@@ -10,6 +10,21 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+
+			// Theme Colours:
+			colors: {
+				primary: {
+					from: 'rgb(var(--color-primary-from) / <alpha-value>)',
+					via: 'rgb(var(--color-primary-via) / <alpha-value>)',
+					to: 'rgb(var(--color-primary-to) / <alpha-value>)',
+				},
+				secondary: {
+					from: 'rgb(var(--color-secondary-from) / <alpha-value>)',
+					via: 'rgb(var(--color-secondary-via) / <alpha-value>)',
+					to: 'rgb(var(--color-secondary-to) / <alpha-value>)',
+				}
+			},
+
 			keyframes: {
 				marquee1: {
 					"0%": { transform: "translateX(0%)" },

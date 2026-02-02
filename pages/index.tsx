@@ -1,11 +1,14 @@
-// import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+// pages/index.tsx
+import Hero from './components/Hero'
+import About from './components/About'
+// import other components...
 
 export default function Home() {
   return (
-    <main>
-    </main>
+    <>
+      <Hero />
+      <About />
+      {/* Other sections */}
+    </>
   )
 }
