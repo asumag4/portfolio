@@ -2,23 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+/*  STATIC palette colurs (never change) */
 :root {
-  /* Primary gradient */
-  --color-primary-from: 147 51 234;  /* purple-600 in RGB */
-  --color-primary-via: 219 39 119;   /* pink-600 in RGB */
-  --color-primary-to: 37 99 235;     /* blue-600 in RGB */
+  /* Palette 1 static colors */
+  --palette1-primary: 34 116 165;
+  --palette1-secondary: 129 108 97;
   
-  /* Secondary gradient */
-  --color-secondary-from: 251 113 133;
-  --color-secondary-via: 217 70 239;
-  --color-secondary-to: 99 102 241;
+  /* Palette 2 static colors */
+  --palette2-primary: 255 100 100;
+  --palette2-secondary: 100 100 255;
+  
+  /* Dark mode static colors */
+  --dark-primary: 20 25 30;
+  --dark-secondary: 180 150 130;
 }
 
-/*Dark theme */
+/* Default palette (palette1) */
+:root {
+  --color-primary: 34 116 165;      /* #2274a5 in RGB */
+  --color-secondary: 129 108 97;    /* #816c61 in RGB */
+  --color-accent: 231 223 198;      /* #e7dfc6 in RGB */
+  --color-background: 233 241 247;  /* #e9f1f7 in RGB */
+  --color-dark: 19 27 35;           /* #131b23 in RGB */
+}
+
+/* Palette 2 */
+[data-theme="palette2"] {
+  --color-primary: 255 100 100;     /* Different red */
+  --color-secondary: 100 100 255;   /* Different blue */
+  --color-accent: 200 200 200;      /* Different gray */
+  --color-background: 250 250 250;  /* Different white */
+  --color-dark: 30 30 30;           /* Different black */
+}
+
+/* Dark Mode */
 [data-theme="dark"] {
-  --color-primary-from: 168 85 247;  /* Different purple */
-  --color-primary-via: 236 72 153;
-  --color-primary-to: 59 130 246;
+  --color-primary: 100 180 255;     /* Lighter blue for dark mode */
+  --color-secondary: 180 150 130;   /* Lighter brown */
+  --color-accent: 80 70 60;         /* Darker beige */
+  --color-background: 20 25 30;     /* Dark background */
+  --color-dark: 240 240 240;        /* Light text */
 }
 
 @media (prefers-color-scheme: dark) {

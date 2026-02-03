@@ -12,14 +12,14 @@ const Hero = () => {
         <div className="flex flex-col justify-center lg:w-1/2 w-full items-center h-full">
           <h1 className="text-6xl font-bold tracking-wide">
             Hi, my name is  
-            <span className="ml-3 whitespace-nowrap bg-gradient-to-r from-primary-from via-primary-via to-primary-to bg-clip-text text-transparent">
+            <span className="ml-3 whitespace-nowrap text-primary bg-clip-text">
               {hero.name}
             </span>
           </h1>
           <h1 className="text-2xl font-bold tracking-wide mt-4">{hero.subtitle}</h1>
-          <a href="#About" className="text-2xl font-bold p-0.5 mt-6 w-44 bg-gradient-to-r from-primary-from via-primary-via to-primary-to">
-            <div className="bg-white">
-              <span className="block text-center py-0.5 px-2 font-semibold bg-white bg-gradient-to-r from-primary-from via-primary-via to-primary-to bg-clip-text text-transparent">
+          <a href="#About" className="text-2xl font-bold p-0.5 mt-6 w-44">
+            <div>
+              <span className="block text-center py-0.5 px-2 font-semibold text-secondary bg-clip-text">
                 Know more
               </span>
             </div>

@@ -11,18 +11,19 @@ module.exports = {
 	theme: {
 		extend: {
 
-			// Theme Colours:
 			colors: {
-				primary: {
-					from: 'rgb(var(--color-primary-from) / <alpha-value>)',
-					via: 'rgb(var(--color-primary-via) / <alpha-value>)',
-					to: 'rgb(var(--color-primary-to) / <alpha-value>)',
-				},
-				secondary: {
-					from: 'rgb(var(--color-secondary-from) / <alpha-value>)',
-					via: 'rgb(var(--color-secondary-via) / <alpha-value>)',
-					to: 'rgb(var(--color-secondary-to) / <alpha-value>)',
-				}
+				
+				// Static colors (never change)
+				'palette1-primary': 'rgb(var(--palette1-primary) / <alpha-value>)',
+				'palette2-primary': 'rgb(var(--palette2-primary) / <alpha-value>)',
+				'dark-primary': 'rgb(var(--dark-primary) / <alpha-value>)',
+
+				// Dynamic colours (change with them)
+				primary: 'rgb(var(--color-primary) / <alpha-value>)',
+				secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+				accent: 'rgb(var(--color-accent) / <alpha-value>)',
+				background: 'rgb(var(--color-background) / <alpha-value>)',
+				dark: 'rgb(var(--color-dark) / <alpha-value>)',
 			},
 
 			keyframes: {
