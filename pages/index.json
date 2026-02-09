@@ -16,13 +16,13 @@
   "hero": {
     "name": "Arthur Sumague",
     "subtitle": "Data Developer | Business Intelligence | Web Development",
-    "picture": "assets/cropped-pfp.jpg"
+    "picture": "/assets/cropped-pfp.jpg"
   },
   "about": {
     "title": "About me",
-    "image": "/placeholder.png",
-    "primary": "This is where you can describe about yourself. The more you describe about yourself, the more chances you have!",
-    "secondary": "Extra Information about you! like hobbies and your goals."
+    "image": "/assets/fall_hike.jpg",
+    "primary": "I studied at the Univeristy of Calgary in Biochemistry 🧪 for undergrad then transitioned in Data Science & Analytics 💻 for my masters. Currently working at Dakota Analytics as a Data Analytics Developer.",
+    "secondary": "Apart from coding, I like to hike the beautiful Rockies of Alberta ⛰️🍁."
   },
   "projects": {
     "title": "Projects",

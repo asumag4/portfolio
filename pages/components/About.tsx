@@ -12,9 +12,9 @@ const About = () => {
           <Image 
             src={about.image} 
             alt="about" 
-            className="shadow-lg" 
-            width={300} 
-            height={300}
+            className="shadow-lg rounded-lg" 
+            width={500} 
+            height={500}
             />
         </div>
         <div className="pt-8 md:py-0 md:w-1/2 text-white md:ml-4 text-center md:text-left">
