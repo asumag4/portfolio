@@ -99,7 +99,7 @@ export interface ProjectItem {
   architecture?: ArchitectureDiagram;
 }
 
-export type SkillAccent = 'blue' | 'teal' | 'purple' | 'amber' | 'coral' | 'green' | 'gray' | 'pink';
+export type SkillAccent = 'blue' | 'teal' | 'purple' | 'amber' | 'coral' | 'green' | 'gray' | 'pink' | 'orange';
 
 export interface SkillGroup {
   category: string;

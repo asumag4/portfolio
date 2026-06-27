@@ -23,13 +23,16 @@ export const portfolio: PortfolioConfig = {
     eyebrow: '// hello, world — calgary, ab',
     name: 'Arthur Sumague',
     typedRoles: [
-      'Data Analytics Developer',
-      'Data Engineer',
+      'Data & Analytics Developer',
+      'Data Architect',
       'Pipeline Builder',
-      'Quant Tinkerer',
+      'Application Builder',
+      'Upstream & Downstream Oil and Gas Analysis',
+      'AI and ML Integration',
+      'Business Intelligence',
     ],
     tagline:
-      'I design data systems that hold up under scrutiny — regulatory emissions platforms, multi-sleeve trading engines, and pipelines that turn raw feeds into decisions.',
+      "I create production-ready scalable data solutions. Always ready to learn more about how data and tech improves business processes.",
     ctas: [
       { label: 'View projects', href: '#projects', variant: 'primary' },
       { label: 'Get in touch', href: '#contact', variant: 'ghost' },
@@ -38,7 +41,7 @@ export const portfolio: PortfolioConfig = {
   },
 
   socials: [
-    { id: 'github', label: 'GitHub', url: 'https://github.com/your-username', icon: 'github' }, // [EDIT]
+    { id: 'github', label: 'GitHub', url: 'https://github.com/asumag4', icon: 'github' }, // [EDIT]
     { id: 'linkedin', label: 'LinkedIn', url: 'https://linkedin.com/in/your-handle', icon: 'linkedin' }, // [EDIT]
     { id: 'leetcode', label: 'LeetCode', url: 'https://leetcode.com/u/your-username/', icon: 'code' }, // [EDIT]
     { id: 'mail', label: 'Email', url: 'mailto:you@example.com', icon: 'mail' }, // [EDIT]
@@ -224,37 +227,43 @@ export const portfolio: PortfolioConfig = {
       category: 'Languages & Query',
       iconClass: 'ti ti-database',
       accent: 'blue',
-      items: ['Python', 'SQL (T-SQL)', 'JavaScript', 'TypeScript', 'R', 'M (Power Query)', 'DAX'],
+      items: ['Python', 'SQL', 'T-SQL', 'PostgreSQL', 'JavaScript', 'TypeScript', 'R', 'M (Power Query)', 'DAX'],
     },
     {
       category: 'Data Engineering & ETL',
       iconClass: 'ti ti-brand-databricks',
-      accent: 'teal',
-      items: ['Databricks', 'PySpark', 'Apache Spark', 'SQL Server (MSSQL)', 'SSIS', 'Dynamic SQL', 'Delta Lake'],
+      accent: 'green',
+      items: ['Databricks', 'PySpark', 'Apache Spark', 'SQL Server (MSSQL)', 'DuckDB', 'DBeaver', 'SQL Server Integration Services (SSIS)', 'Dynamic SQL', 'Delta Lake', 'Visual Studio'],
+    },
+    {
+      category: 'Amazon Web Services',
+      iconClass: 'ti ti-cloud-computing',
+      accent: 'orange',
+      items: ['AWS EC2', 'AWS S3', 'AWS Athena', 'AWS RDS'],
+    },
+    {
+      category: 'Azure',
+      iconClass: 'ti ti-cloud-computing',
+      accent: 'amber',
+      items: ['Azure Databricks', 'Azure Virtual Machines', 'Azure DataFactory', 'Azure Key Vault', 'Power BI Gateway'],
     },
     {
       category: 'Microsoft Power Platform / BI',
       iconClass: 'ti ti-chart-bar',
-      accent: 'purple',
+      accent: 'teal',
       items: ['Power BI', 'Power Query', 'Power Apps', 'Tabular Editor 2', 'Power BI Report Server', 'Office Scripts', 'Excel (advanced formulas)'],
     },
     {
-      category: 'Cloud & Azure Ecosystem',
-      iconClass: 'ti ti-cloud',
-      accent: 'amber',
-      items: ['Azure Databricks', 'Azure Active Directory', 'Microsoft Graph API', 'Azure App Registration', 'Power BI Gateway', 'MSAL (Python)'],
-    },
-    {
       category: 'Web Development',
-      iconClass: 'ti ti-brand-react',
+      iconClass: 'ti ti-app-window',
       accent: 'coral',
-      items: ['React', 'FastAPI', 'Pydantic', 'Uvicorn', 'REST APIs', 'HTML/CSS', 'Babel (standalone)', 'Python HTTP server'],
+      items: ['React', 'Vue.js', 'FastAPI', 'Pydantic', 'Uvicorn', 'REST APIs', 'Tailwind', 'HTML/CSS', 'Babel (standalone)', 'Python HTTP server'],
     },
     {
       category: 'AI / ML & Data Science',
-      iconClass: 'ti ti-robot',
+      iconClass: 'ti ti-ai',
       accent: 'green',
-      items: ['Anthropic API (Claude)', 'pandas', 'NumPy', 'scikit-learn', 'Plotly', 'ggplot2 (R)', 'LLM prompt engineering', 'RAG / web search tools'],
+      items: ['Anthropic API (Claude)', 'pandas', 'NumPy', 'scikit-learn', 'statsmodels', 'Plotly', 'ggplot2 (R)', 'LLM prompt engineering', 'RAG / web search tools'],
     },
     {
       category: 'Integrations & APIs',
@@ -266,7 +275,13 @@ export const portfolio: PortfolioConfig = {
       category: 'Dev Environment & Tooling',
       iconClass: 'ti ti-terminal-2',
       accent: 'pink',
-      items: ['Linux (Fedora)', 'pyenv', 'Git', 'Bash', 'venv', 'pip / npm', 'LeetCode / DSA (Python)'],
+      items: ['Linux (Fedora)', 'pyenv', 'Git', 'Bash', 'uv', 'venv', 'pip / npm', 'LeetCode / DSA (Python)'],
+    },
+    {
+      category: 'Robotics Process Automation',
+      iconClass: 'ti ti-robot',
+      accent: 'purple',
+      items: ['Automation Anywhere'],
     },
   ],
 

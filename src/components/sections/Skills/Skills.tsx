@@ -13,6 +13,7 @@ const ICON_STYLE: Record<SkillAccent, { bg: string; color: string }> = {
   green:  { bg: 'rgba(52,211,153,0.12)',  color: '#34d399' },
   gray:   { bg: 'rgba(108,122,156,0.10)', color: '#9aa3bf' },
   pink:   { bg: 'rgba(255,122,198,0.12)', color: '#ff7ac6' },
+  orange: { bg: 'rgba(251,146,60,0.12)',  color: '#fb923c' },
 };
 
 export function Skills(): JSX.Element {

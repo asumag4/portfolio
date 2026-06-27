@@ -72,6 +72,7 @@
 .p-green  { background: rgba(52,211,153,0.12);  color: #34d399; }
 .p-gray   { background: rgba(108,122,156,0.10); color: var(--text-muted); }
 .p-pink   { background: rgba(255,122,198,0.12); color: #ff7ac6; }
+.p-orange { background: rgba(249,115,22,0.14); color: #fb923c; }
 
 /* Light-mode overrides — shift to darker ink so pills read on pale surfaces */
 html[data-theme="daylight"] .p-blue   { background: rgba(91,78,230,0.10);  color: #4a3ed1; }
