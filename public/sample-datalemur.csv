@@ -1,0 +1,86 @@
+date,question,difficulty,category
+2025-03-03,Histogram of Tweets,Easy,Joins
+2025-03-04,Data Science Skills,Easy,Sorting
+2025-03-05,Page With No Likes,Easy,Aggregations
+2025-03-06,Unfinished Parts,Easy,Joins
+2025-03-07,Laptop vs Mobile Viewership,Easy,Filtering
+2025-03-08,Average Post Hiatus,Easy,Aggregations
+2025-03-11,Teams Power Users,Easy,Sorting
+2025-03-12,Duplicate Job Listings,Easy,Filtering
+2025-03-13,Cities With Completed Trades,Easy,Sorting
+2025-03-14,Average Review Ratings,Easy,Aggregations
+2025-03-15,App Click-through Rate,Easy,Aggregations
+2025-03-18,Second Day Confirmation,Easy,Aggregations
+2025-03-19,Cards Issued Difference,Easy,Aggregations
+2025-03-20,Compressed Mean,Easy,Joins
+2025-03-23,Pharmacy Analytics,Easy,Filtering
+2025-03-24,Patient Support Analysis,Easy,Joins
+2025-03-25,Sending vs Opening Snaps,Easy,Aggregations
+2025-03-26,Tweets Rolling Averages,Easy,Joins
+2025-03-27,Highest-Grossing Items,Easy,Aggregations
+2025-03-28,Top Three Salaries,Easy,Filtering
+2025-03-31,Signup Activation Rate,Easy,Sorting
+2025-04-02,Supercloud Customer,Easy,Sorting
+2025-04-05,Odd vs Even Measurements,Easy,Joins
+2025-04-07,Department vs Company Salary,Easy,Filtering
+2025-04-08,Histogram of Users and Purchases,Easy,Filtering
+2025-04-09,User Shopping Sprees,Easy,Joins
+2025-04-12,Active User Retention,Easy,Joins
+2025-04-15,Y-on-Y Growth Rate,Easy,Joins
+2025-04-16,Maximize Prime Item Inventory,Easy,Aggregations
+2025-04-19,Median Google Search Frequency,Easy,Filtering
+2025-04-21,Advertiser Status,Easy,Filtering
+2025-04-24,3-Topping Pizzas,Easy,Sorting
+2025-04-25,Repeated Payments,Easy,Aggregations
+2025-04-27,Server Utilization Time,Easy,Joins
+2025-04-29,Compensation Outliers,Easy,Sorting
+2025-05-02,International Call Percentage,Easy,Aggregations
+2025-05-03,Histogram of Tweets 2,Easy,Joins
+2025-05-06,Data Science Skills 2,Easy,Aggregations
+2025-05-07,Page With No Likes 2,Medium,Subqueries
+2025-05-10,Unfinished Parts 2,Medium,Subqueries
+2025-05-13,Laptop vs Mobile Viewership 2,Medium,Subqueries
+2025-05-14,Average Post Hiatus 2,Medium,Date Functions
+2025-05-16,Teams Power Users 2,Medium,CTEs
+2025-05-17,Duplicate Job Listings 2,Medium,Date Functions
+2025-05-18,Cities With Completed Trades 2,Medium,CTEs
+2025-05-20,Average Review Ratings 2,Medium,CTEs
+2025-05-21,App Click-through Rate 2,Medium,Date Functions
+2025-05-24,Second Day Confirmation 2,Medium,Date Functions
+2025-05-25,Cards Issued Difference 2,Medium,CTEs
+2025-05-28,Compressed Mean 2,Medium,Date Functions
+2025-05-30,Pharmacy Analytics 2,Medium,CTEs
+2025-06-02,Patient Support Analysis 2,Medium,Subqueries
+2025-06-05,Sending vs Opening Snaps 2,Medium,Subqueries
+2025-06-08,Tweets Rolling Averages 2,Medium,CTEs
+2025-06-09,Highest-Grossing Items 2,Medium,Window Functions
+2025-06-10,Top Three Salaries 2,Medium,CTEs
+2025-06-11,Signup Activation Rate 2,Medium,CTEs
+2025-06-12,Supercloud Customer 2,Medium,Date Functions
+2025-06-13,Odd vs Even Measurements 2,Medium,Subqueries
+2025-06-15,Department vs Company Salary 2,Medium,Window Functions
+2025-06-16,Histogram of Users and Purchases 2,Medium,Date Functions
+2025-06-18,User Shopping Sprees 2,Medium,Subqueries
+2025-06-19,Active User Retention 2,Medium,Window Functions
+2025-06-22,Y-on-Y Growth Rate 2,Medium,Date Functions
+2025-06-25,Maximize Prime Item Inventory 2,Medium,Date Functions
+2025-06-28,Median Google Search Frequency 2,Medium,Window Functions
+2025-07-01,Advertiser Status 2,Medium,Date Functions
+2025-07-02,3-Topping Pizzas 2,Medium,CTEs
+2025-07-03,Repeated Payments 2,Medium,CTEs
+2025-07-06,Server Utilization Time 2,Medium,CTEs
+2025-07-07,Compensation Outliers 2,Medium,Subqueries
+2025-07-08,International Call Percentage 2,Medium,Window Functions
+2025-07-09,Histogram of Tweets 3,Medium,CTEs
+2025-07-10,Data Science Skills 3,Medium,Subqueries
+2025-07-11,Page With No Likes 3,Hard,Advanced Windows
+2025-07-12,Unfinished Parts 3,Hard,Optimization
+2025-07-15,Laptop vs Mobile Viewership 3,Hard,Advanced Windows
+2025-07-17,Average Post Hiatus 3,Hard,Recursive CTEs
+2025-07-19,Teams Power Users 3,Hard,Recursive CTEs
+2025-07-20,Duplicate Job Listings 3,Hard,Advanced Windows
+2025-07-23,Cities With Completed Trades 3,Hard,Recursive CTEs
+2025-07-26,Average Review Ratings 3,Hard,Recursive CTEs
+2025-07-28,App Click-through Rate 3,Hard,Advanced Windows
+2025-07-29,Second Day Confirmation 3,Hard,Advanced Windows
+2025-07-31,Cards Issued Difference 3,Hard,Optimization
