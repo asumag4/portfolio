@@ -52,18 +52,25 @@ export interface HeroConfig {
   scrollHint: string;
 }
 
+export interface BulletItem {
+  text: string;
+  sub: string[];
+}
+
 export interface ExperienceItem {
   id: string;
   role: string;
   company: string;
   companyUrl?: string;
+  /** HTTP(S) URL of the company logo — sourced from the web, not stored in the repo */
+  logoUrl?: string;
   /** Free-form, e.g. "Jan 2024" */
   start: string;
   /** null = present */
   end: string | null;
   location?: string;
   summary?: string;
-  bullets: string[];
+  bullets: (string | BulletItem)[];
   tech: string[];
 }
 
@@ -178,11 +185,33 @@ export interface FooterConfig {
   line: string;
 }
 
+export interface NotableWork {
+  name: string;
+  /** Bullet-point tasks or contributions */
+  description: string[];
+}
+
+export interface EducationItem {
+  id: string;
+  /** Tabler icon class e.g. 'ti ti-school', or an emoji */
+  icon?: string;
+  education_title: string;
+  major: string;
+  school: string;
+  /** Free-form, e.g. "Sep 2019" */
+  start: string;
+  /** null = Present */
+  end: string | null;
+  description?: string;
+  notable_works: NotableWork[];
+}
+
 export interface PortfolioConfig {
   meta: MetaConfig;
   hero: HeroConfig;
   socials: SocialLink[];
   experiences: ExperienceItem[];
+  education?: EducationItem[];
   projects: ProjectItem[];
   skills: SkillGroup[];
   stats: StatsConfig;

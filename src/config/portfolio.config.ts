@@ -53,47 +53,100 @@ export const portfolio: PortfolioConfig = {
   experiences: [
     {
       id: 'exp-current',
-      role: 'Data Engineer', // [EDIT]
-      company: 'Energy Sector Co.', // [EDIT — placeholder employer]
-      companyUrl: undefined,
-      start: 'Jan 2024',
+      logoUrl: 'https://d2q79iu7y748jz.cloudfront.net/s/_logo/2cbc5f225ada76ac7b5c520707bf11ef',
+      role: 'Data Analytics Developer I', 
+      company: 'Dakota Analytics', 
+      companyUrl: 'https://dakotaanalytics.com/',
+      start: 'Jul 2025',
       end: null, // null = Present
       location: 'Calgary, AB',
       summary:
-        'Building the data backbone for industrial emissions reporting and operational analytics.',
+        'Developer consultant on Database Warehousing, Data Serving (ETL) and BI Reporting',
       bullets: [
-        'Designed a regulatory emissions platform separating mutable operational data from immutable, frozen submission snapshots with full amendment lineage (A0 → A1 → A2).',
-        'Implemented an approval state machine (Draft → Validating → Approved → Submitted → Superseded) with soft-delete and provenance tracking in SQL Server.',
-        'Orchestrated ingestion and transformation pipelines with Airflow and dbt across hourly source / pollutant grains.',
+          {
+            text: 'Data Analyst & Architect for major O&G Producer',
+            sub: [
+              'Scope and assessment of +2000 reports and +20 data sources — understanding relevance on current business operations on O&G distribution and future solutions to be made from them',
+              'Implementation of robotics process automation on in-house file system directory — potential to automate 900 hours of engineer work for major O&G producer',
+              'Data modelling and incremental history-archiving process development of emissions data for major O&G producer',
+            ],
+          },
+          {
+            text: 'Report Developer for major O&G distributor',
+            sub: [
+              'Maintenance and improvements to web application for division orders creation to land-rights co-owners for major O&G producer - encompassing well land rights for more than 100+ co-owners',
+              'Established documentation site format of data-product for major O&G distributor',
+              'Developed a data-quality integrity platform to check if data is correctly synced throughout the pipeline, across 3 different databases',
+            ]
+          },
+          {
+            text: 'Custom Data and Software Solutions',
+            sub: [
+              'Developed 3 demo Power Apps to manage division orders for to minerals producer',
+              'Developed Hubspot data ingestion and ETL for in-house marketing and operations reporting',
+              'Developing tenant-based access role to in-house-made apps-suite - shipping to 2 clients',
+              'Developed warehousing and serving financial data model for O&G producer - currently used by 2 finance executives',
+            ]
+          },
+          { 
+            text: 'Modelling & Reporting for O&G Business Intelligence',
+            sub: [
+              'Developed production reports for oil and gas (O&G) exploration & producer - providing insight into daily production & sales volumes per well',
+              'Sustainment of Financial / Accounting reporting for major O&G producer - providing high-level detail to international O&G operations',
+              'ETL and data modelling of 5 production data-sources for O&G producer for operational and production reporting',
+            ]
+          },
       ],
-      tech: ['Python', 'SQL Server', 'Airflow', 'dbt', 'Docker'],
+      tech: ['Upstream Oil and Gas', 'Downstream Oil and Gas', 'Business Intelligence', 'Data Engineering & ETL', 'Databricks', 'Azure', 'Amazon Web Services', 'Microsoft Power Platform / BI'],
     },
     {
-      id: 'exp-analyst',
-      role: 'Data Analyst', // [EDIT]
-      company: 'Previous Company', // [EDIT — placeholder employer]
-      start: 'May 2022',
-      end: 'Dec 2023',
+      id: 'exp-intern',
+      role: 'Data Analytics Developer (Intern)', // [EDIT]
+      company: 'Dakota Analytics', // [EDIT — placeholder employer]
+      start: 'April 2025',
+      end: 'Jul 2025',
       location: 'Calgary, AB',
-      summary: 'Analytics and reporting automation for operational teams.',
+      summary: 'Analytics and reporting for operational, production and finance teams.',
       bullets: [
-        'Automated recurring reporting workflows in Python and SQL, cutting manual prep time substantially.', // [EDIT]
-        'Built dashboards and ad-hoc analyses that informed operational decisions.', // [EDIT]
+          'Developed production reports for oil and gas (O&G) exploration & producer - providing insight into daily production & sales volumes per well',
+          'Sustainment of Financial / Accounting reporting for major O&G producer - providing high-level detail to international O&G operations',
+          'Developed 3 demo Power Apps to manage division orders for to minerals producer',
       ],
-      tech: ['Python', 'PostgreSQL', 'Plotly Dash'],
+      tech: ['Azure', 'Microsoft Power Platform / BI'],
     },
+  ],
+
+  /* ----------------------------------------------------------------
+   * EDUCATION — panels with notable works / clubs / projects inside.
+   * Add a new object to the array for each degree or institution.
+   * ---------------------------------------------------------------- */
+  education: [
     {
-      id: 'exp-grad',
-      role: 'Graduate Researcher', // [EDIT]
-      company: 'University', // [EDIT — placeholder]
-      start: 'Sep 2020',
-      end: 'Apr 2022',
-      location: 'Canada',
-      summary: 'Quantitative research in a graduate program.',
-      bullets: [
-        'Applied statistical modelling and time-series methods to research problems.', // [EDIT]
+      id: 'edu-example',
+      icon: 'ti ti-school',
+      education_title: 'Bachelor of Science', // [EDIT]
+      major: 'Data Analytics / Computer Science', // [EDIT]
+      school: 'University of Calgary', // [EDIT]
+      start: 'Sep 2019', // [EDIT]
+      end: 'Apr 2023', // [EDIT — null = Present]
+      description: 'Focused on statistical modelling, data systems, and quantitative methods.', // [EDIT]
+      notable_works: [
+        {
+          name: 'Capstone Project — Supply Chain Forecasting', // [EDIT]
+          description: [
+            'Built a time-series demand model using ARIMA and XGBoost',
+            'Reduced forecast error by 18% vs the baseline model',
+            'Presented findings to a panel of industry judges',
+          ],
+        },
+        {
+          name: 'Data Science Club', // [EDIT]
+          description: [
+            'Led weekly workshops on pandas and SQL fundamentals',
+            'Organized the annual data hackathon with 60+ participants',
+          ],
+        },
       ],
-      tech: ['Python', 'scikit-learn', 'Statistics'],
     },
   ],
 
@@ -233,7 +286,7 @@ export const portfolio: PortfolioConfig = {
       category: 'Data Engineering & ETL',
       iconClass: 'ti ti-brand-databricks',
       accent: 'green',
-      items: ['Databricks', 'PySpark', 'Apache Spark', 'SQL Server (MSSQL)', 'DuckDB', 'DBeaver', 'SQL Server Integration Services (SSIS)', 'Dynamic SQL', 'Delta Lake', 'Visual Studio'],
+      items: ['Databricks', 'PySpark', 'Apache Spark', 'SQL Server (MSSQL)', 'Data Build Tool (dbt)', 'Claude Code', 'DuckDB', 'DBeaver', 'SQL Server Integration Services (SSIS)', 'Dynamic SQL', 'Delta Lake', 'Visual Studio', 'Data Warehousing', 'Star Schema', 'Slowly Changing Dimensiosn (SCD)'],
     },
     {
       category: 'Amazon Web Services',

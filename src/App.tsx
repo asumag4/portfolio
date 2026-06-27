@@ -4,6 +4,7 @@ import { Navbar } from './components/layout/Navbar';
 import { ScrollProgress } from './components/layout/ScrollProgress';
 import { About } from './components/sections/About/About';
 import { Contact } from './components/sections/Contact/Contact';
+import { Education } from './components/sections/Education/Education';
 import { Experience } from './components/sections/Experience/Experience';
 import { Hero } from './components/sections/Hero/Hero';
 import { Projects } from './components/sections/Projects/Projects';
@@ -17,8 +18,9 @@ import { useKonami } from './hooks/useKonami';
  * Section components keyed by registry id — reordering happens in
  * sections.ts, not here.
  */
-const SECTION_COMPONENTS: Record<string, () => JSX.Element> = {
+const SECTION_COMPONENTS: Record<string, () => JSX.Element | null> = {
   experience: Experience,
+  education: Education,
   projects: Projects,
   skills: Skills,
   stats: Stats,

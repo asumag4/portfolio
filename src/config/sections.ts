@@ -12,7 +12,8 @@ export interface SectionMeta {
 
 export const SECTION_REGISTRY: SectionMeta[] = [
   { id: 'experience', label: 'Experience', nav: true },
-  { id: 'projects', label: 'Projects', nav: true, alt: true },
+  { id: 'education', label: 'Education', nav: true, alt: true },
+  { id: 'projects', label: 'Projects', nav: true },
   { id: 'skills', label: 'Skills', nav: true },
   { id: 'stats', label: 'Code Stats', nav: true, alt: true },
   { id: 'about', label: 'About', nav: true },
