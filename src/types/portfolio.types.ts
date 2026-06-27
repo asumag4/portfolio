@@ -99,10 +99,14 @@ export interface ProjectItem {
   architecture?: ArchitectureDiagram;
 }
 
+export type SkillAccent = 'blue' | 'teal' | 'purple' | 'amber' | 'coral' | 'green' | 'gray' | 'pink';
+
 export interface SkillGroup {
   category: string;
-  icon?: IconName;
-  items: { name: string; level?: number }[];
+  /** Tabler icon class string, e.g. 'ti ti-database' */
+  iconClass: string;
+  accent: SkillAccent;
+  items: string[];
 }
 
 export interface StatsConfig {

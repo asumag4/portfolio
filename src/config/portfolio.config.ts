@@ -215,48 +215,58 @@ export const portfolio: PortfolioConfig = {
   ],
 
   /* ----------------------------------------------------------------
-   * SKILLS — level is optional (0–100); omit it to hide the bar.
+   * SKILLS — category cards with pill tags, ordered by importance.
+   * accent options: blue | teal | purple | amber | coral | green | gray | pink
+   * iconClass: any Tabler icon class, e.g. 'ti ti-database'
    * ---------------------------------------------------------------- */
   skills: [
     {
-      category: 'Data Engineering',
-      icon: 'database',
-      items: [
-        { name: 'Python', level: 92 },
-        { name: 'SQL', level: 90 },
-        { name: 'Apache Airflow', level: 80 },
-        { name: 'dbt Core', level: 78 },
-      ],
+      category: 'Languages & Query',
+      iconClass: 'ti ti-database',
+      accent: 'blue',
+      items: ['Python', 'SQL (T-SQL)', 'JavaScript', 'TypeScript', 'R', 'M (Power Query)', 'DAX'],
     },
     {
-      category: 'Databases',
-      icon: 'database',
-      items: [
-        { name: 'PostgreSQL', level: 88 },
-        { name: 'SQL Server', level: 84 },
-        { name: 'DuckDB', level: 75 },
-        { name: 'Supabase', level: 72 },
-      ],
+      category: 'Data Engineering & ETL',
+      iconClass: 'ti ti-brand-databricks',
+      accent: 'teal',
+      items: ['Databricks', 'PySpark', 'Apache Spark', 'SQL Server (MSSQL)', 'SSIS', 'Dynamic SQL', 'Delta Lake'],
     },
     {
-      category: 'ML & Analytics',
-      icon: 'code',
-      items: [
-        { name: 'scikit-learn', level: 82 },
-        { name: 'XGBoost / LightGBM', level: 76 },
-        { name: 'PyTorch', level: 60 },
-        { name: 'MLflow', level: 68 },
-      ],
+      category: 'Microsoft Power Platform / BI',
+      iconClass: 'ti ti-chart-bar',
+      accent: 'purple',
+      items: ['Power BI', 'Power Query', 'Power Apps', 'Tabular Editor 2', 'Power BI Report Server', 'Office Scripts', 'Excel (advanced formulas)'],
     },
     {
-      category: 'Tooling',
-      icon: 'code',
-      items: [
-        { name: 'Docker', level: 74 },
-        { name: 'Git', level: 86 },
-        { name: 'uv / VS Code', level: 85 },
-        { name: 'Plotly Dash', level: 70 },
-      ],
+      category: 'Cloud & Azure Ecosystem',
+      iconClass: 'ti ti-cloud',
+      accent: 'amber',
+      items: ['Azure Databricks', 'Azure Active Directory', 'Microsoft Graph API', 'Azure App Registration', 'Power BI Gateway', 'MSAL (Python)'],
+    },
+    {
+      category: 'Web Development',
+      iconClass: 'ti ti-brand-react',
+      accent: 'coral',
+      items: ['React', 'FastAPI', 'Pydantic', 'Uvicorn', 'REST APIs', 'HTML/CSS', 'Babel (standalone)', 'Python HTTP server'],
+    },
+    {
+      category: 'AI / ML & Data Science',
+      iconClass: 'ti ti-robot',
+      accent: 'green',
+      items: ['Anthropic API (Claude)', 'pandas', 'NumPy', 'scikit-learn', 'Plotly', 'ggplot2 (R)', 'LLM prompt engineering', 'RAG / web search tools'],
+    },
+    {
+      category: 'Integrations & APIs',
+      iconClass: 'ti ti-plug-connected',
+      accent: 'gray',
+      items: ['HubSpot (CRM data)', 'Microsoft Graph API', 'ODBC/JDBC', 'openpyxl', 'MSAL', 'requests'],
+    },
+    {
+      category: 'Dev Environment & Tooling',
+      iconClass: 'ti ti-terminal-2',
+      accent: 'pink',
+      items: ['Linux (Fedora)', 'pyenv', 'Git', 'Bash', 'venv', 'pip / npm', 'LeetCode / DSA (Python)'],
     },
   ],
 
