@@ -395,19 +395,15 @@ export const portfolio: PortfolioConfig = {
    * ---------------------------------------------------------------- */
   stats: {
     leetcode: {
-      username: 'your-username', // [EDIT]
-      profileUrl: 'https://leetcode.com/u/your-username/', // [EDIT]
+      username: 'asumag4', // [EDIT]
+      profileUrl: 'https://leetcode.com/u/asumag4/', // [EDIT]
       showCard: true,
     },
     datalemur: {
-      profileUrl: 'https://datalemur.com', // [EDIT — your profile URL if you want one linked]
-      // [EDIT] Point this at the raw CSV in your repo, e.g.
-      // 'https://raw.githubusercontent.com/<user>/<repo>/main/datalemur.csv'
-      // A bundled sample lives at /sample-datalemur.csv so the section
-      // works out of the box.
-      csvUrl: '/sample-datalemur.csv',
-      fallbackTotal: 85,
-      note: 'Tracked manually in a CSV — fetched live from the repo.',
+      profileUrl: 'https://datalemur.com/profile/asumag4',
+      csvUrl: 'https://raw.githubusercontent.com/asumag4/practice/main/DataLemur/questions1.csv',
+      fallbackTotal: 35,
+      note: 'Solved count tallied live from my practice CSV.',
     },
     github: {
       username: 'your-username', // [EDIT]

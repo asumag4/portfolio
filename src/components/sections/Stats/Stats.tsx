@@ -70,25 +70,32 @@ export function Stats(): JSX.Element {
             <Icon name="database" size={16} /> DataLemur
           </h3>
 
-          <div className="stats__big">
+          <div className="stats__dl-hero">
             <CountUp value={stats.total} className="stats__number" />
             <span className="stats__big-label">SQL problems solved</span>
           </div>
 
+          <div className="stats__dl-divider" />
+
           {stats.byDifficulty.length > 0 ? (
             <ul className="stats__difficulties">
-              {stats.byDifficulty.map((d) => (
-                <li key={d.label} className="stats__difficulty">
-                  <span className="stats__difficulty-label">{d.label}</span>
-                  <div className="stats__difficulty-bar">
-                    <div
-                      className={`stats__difficulty-fill stats__difficulty-fill--${d.label.toLowerCase()}`}
-                      style={{ '--w': `${(d.count / maxDifficulty) * 100}%` } as React.CSSProperties}
-                    />
-                  </div>
-                  <span className="stats__difficulty-count">{d.count}</span>
-                </li>
-              ))}
+              {stats.byDifficulty.map((d) => {
+                const pct = Math.round((d.count / stats.total) * 100);
+                return (
+                  <li key={d.label} className="stats__difficulty">
+                    <span className={`stats__difficulty-dot stats__difficulty-dot--${d.label.toLowerCase()}`} />
+                    <span className="stats__difficulty-label">{d.label}</span>
+                    <div className="stats__difficulty-bar">
+                      <div
+                        className={`stats__difficulty-fill stats__difficulty-fill--${d.label.toLowerCase()}`}
+                        style={{ '--w': `${(d.count / maxDifficulty) * 100}%` } as React.CSSProperties}
+                      />
+                    </div>
+                    <span className="stats__difficulty-count">{d.count}</span>
+                    <span className="stats__difficulty-pct">{pct}%</span>
+                  </li>
+                );
+              })}
             </ul>
           ) : null}
 
@@ -103,7 +110,7 @@ export function Stats(): JSX.Element {
           {datalemur.profileUrl ? (
             <a className="btn btn--ghost btn--sm" href={datalemur.profileUrl} target="_blank" rel="noreferrer">
               <Icon name="external" size={15} />
-              DataLemur
+              View profile
             </a>
           ) : null}
         </Reveal>

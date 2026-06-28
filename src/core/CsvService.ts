@@ -65,8 +65,13 @@ export interface DataLemurStats {
   live: boolean;
 }
 
-const HEADER_HINT = /question|title|problem|difficulty|level|date|category|topic|name|status/;
+const HEADER_HINT = /question|title|problem|difficulty|level|date|category|topic|name|status|solved/;
 const DIFFICULTY_ORDER = ['Easy', 'Medium', 'Hard'];
+
+function isSolvedValue(raw: string): boolean {
+  const v = raw.trim().toLowerCase();
+  return v === 'true' || v === '1' || v === 'yes' || v === 'y';
+}
 
 export class DataLemurService {
   constructor(private readonly csvUrl: string) {}
@@ -83,10 +88,17 @@ export class DataLemurService {
     const difficultyIdx = hasHeader
       ? firstRowLower.findIndex((c) => c.includes('difficulty') || c === 'level')
       : -1;
+    const solvedIdx = hasHeader
+      ? firstRowLower.findIndex((c) => c.includes('solved') || c.includes('status'))
+      : -1;
 
     const tally = new Map<string, number>();
-    if (difficultyIdx >= 0) {
-      for (const row of dataRows) {
+    let solvedTotal = 0;
+
+    for (const row of dataRows) {
+      if (solvedIdx >= 0 && !isSolvedValue(row[solvedIdx] ?? '')) continue;
+      solvedTotal += 1;
+      if (difficultyIdx >= 0) {
         const raw = (row[difficultyIdx] ?? '').trim();
         if (!raw) continue;
         const label = raw[0].toUpperCase() + raw.slice(1).toLowerCase();
@@ -102,6 +114,7 @@ export class DataLemurService {
         return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi);
       });
 
-    return { total: dataRows.length, byDifficulty, live: true };
+    const total = solvedIdx >= 0 ? solvedTotal : dataRows.length;
+    return { total, byDifficulty, live: true };
   }
 }

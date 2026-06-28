@@ -93,3 +93,8 @@ Static output — anything that serves `/dist` works:
 - **OOP core** (`src/core/`): `ThemeManager`, `StarfieldEngine` (Star / ShootingStar classes), `Typewriter`, `CsvParser` + `DataLemurService` — framework-free classes
 - **Thin React shells** (`src/components/`): hooks bridge the classes into the component tree (`useTypewriter`, `useDataLemur`, …)
 - **Config in, DOM out**: components map over config arrays; adding content never means writing JSX
+
+
+## Future Work
+
+- [ ] When clicking on the skills - should bring a web of all the relevant work-experiences + projects along through it
