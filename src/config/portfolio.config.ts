@@ -64,7 +64,7 @@ export const portfolio: PortfolioConfig = {
         'Developer consultant on Database Warehousing, Data Serving (ETL) and BI Reporting',
       bullets: [
           {
-            text: 'Data Analyst & Architect for major O&G Producer',
+            text: 'Data Analyst & Architect for major Oil and Gas Producer',
             sub: [
               'Scope and assessment of +2000 reports and +20 data sources — understanding relevance on current business operations on O&G distribution and future solutions to be made from them',
               'Implementation of robotics process automation on in-house file system directory — potential to automate 900 hours of engineer work for major O&G producer',
@@ -72,7 +72,7 @@ export const portfolio: PortfolioConfig = {
             ],
           },
           {
-            text: 'Report Developer for major O&G distributor',
+            text: 'Report Developer for major Oil and Gas distributor',
             sub: [
               'Maintenance and improvements to web application for division orders creation to land-rights co-owners for major O&G producer - encompassing well land rights for more than 100+ co-owners',
               'Established documentation site format of data-product for major O&G distributor',
@@ -89,7 +89,7 @@ export const portfolio: PortfolioConfig = {
             ]
           },
           { 
-            text: 'Modelling & Reporting for O&G Business Intelligence',
+            text: 'Modelling & Reporting for Oil and Gas Business Intelligence',
             sub: [
               'Developed production reports for oil and gas (O&G) exploration & producer - providing insight into daily production & sales volumes per well',
               'Sustainment of Financial / Accounting reporting for major O&G producer - providing high-level detail to international O&G operations',
@@ -103,7 +103,8 @@ export const portfolio: PortfolioConfig = {
       id: 'exp-intern',
       role: 'Data Analytics Developer (Intern)', // [EDIT]
       company: 'Dakota Analytics', // [EDIT — placeholder employer]
-      start: 'April 2025',
+      companyUrl: 'https://dakotaanalytics.com/',
+      start: 'Apr 2025',
       end: 'Jul 2025',
       location: 'Calgary, AB',
       summary: 'Analytics and reporting for operational, production and finance teams.',
@@ -114,6 +115,48 @@ export const portfolio: PortfolioConfig = {
       ],
       tech: ['Azure', 'Microsoft Power Platform / BI'],
     },
+    {
+      id: 'exp-research2',
+      role: 'Summer Research Student',
+      company: 'APACE Laboratory',
+      companyUrl: 'https://www.structurems.ca/',
+      start: 'May 2024',
+      end: 'Aug 2024',
+      location: 'Calgary, AB',
+      summary: 'Undergraduate Researcher',
+      bullets: [
+        'Applying scientific method in designing and testing novel methodology of protein structure analysis'
+      ],
+      tech: ['Scientific Research'],
+    },
+    {
+      id: 'exp-research1',
+      role: 'Part-time Associate Researcher',
+      company: 'APACE Laboratory',
+      companyUrl: 'https://www.structurems.ca/',
+      start: 'Sep 2023',
+      end: 'May 2024',
+      location: 'Calgary, AB',
+      summary: 'Undergraduate Researcher',
+      bullets: [
+        'Production of Nepenthesin 2 Protease'
+      ],
+      tech: ['Scientific Research'],
+    },
+    {
+      id: 'exp-research',
+      role: 'Summer Research Student',
+      company: 'APACE Laboratory',
+      companyUrl: 'https://www.structurems.ca/',
+      start: 'May 2023',
+      end: 'Aug 2023',
+      location: 'Calgary, AB',
+      summary: 'Undergraduate Researcher',
+      bullets: [
+        'Revitalizing production of Nepenthesin 2 via Escherichia coli host for Hydrogen-Deuterium Exchange Mass Spectrometry protein structural analysis'
+      ],
+      tech: ['Scientific Research'],
+    }
   ],
 
   /* ----------------------------------------------------------------
