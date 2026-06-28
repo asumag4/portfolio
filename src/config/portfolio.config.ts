@@ -53,7 +53,6 @@ export const portfolio: PortfolioConfig = {
   experiences: [
     {
       id: 'exp-current',
-      logoUrl: 'https://d2q79iu7y748jz.cloudfront.net/s/_logo/2cbc5f225ada76ac7b5c520707bf11ef',
       role: 'Data Analytics Developer I', 
       company: 'Dakota Analytics', 
       companyUrl: 'https://dakotaanalytics.com/',
@@ -120,8 +119,8 @@ export const portfolio: PortfolioConfig = {
       role: 'Summer Research Student',
       company: 'APACE Laboratory',
       companyUrl: 'https://www.structurems.ca/',
-      start: 'May 2024',
-      end: 'Aug 2024',
+      start: 'May 2023',
+      end: 'Aug 2023',
       location: 'Calgary, AB',
       summary: 'Undergraduate Researcher',
       bullets: [
@@ -134,8 +133,8 @@ export const portfolio: PortfolioConfig = {
       role: 'Part-time Associate Researcher',
       company: 'APACE Laboratory',
       companyUrl: 'https://www.structurems.ca/',
-      start: 'Sep 2023',
-      end: 'May 2024',
+      start: 'Sep 2022',
+      end: 'May 2023',
       location: 'Calgary, AB',
       summary: 'Undergraduate Researcher',
       bullets: [
@@ -148,8 +147,8 @@ export const portfolio: PortfolioConfig = {
       role: 'Summer Research Student',
       company: 'APACE Laboratory',
       companyUrl: 'https://www.structurems.ca/',
-      start: 'May 2023',
-      end: 'Aug 2023',
+      start: 'May 2022',
+      end: 'Aug 2022',
       location: 'Calgary, AB',
       summary: 'Undergraduate Researcher',
       bullets: [
@@ -165,28 +164,38 @@ export const portfolio: PortfolioConfig = {
    * ---------------------------------------------------------------- */
   education: [
     {
-      id: 'edu-example',
+      id: 'edu-masters',
       icon: 'ti ti-school',
-      education_title: 'Bachelor of Science', // [EDIT]
-      major: 'Data Analytics / Computer Science', // [EDIT]
+      education_title: 'Masters in Data Science & Analytics', // [EDIT]
+      major: 'Data Science', // [EDIT]
       school: 'University of Calgary', // [EDIT]
-      start: 'Sep 2019', // [EDIT]
-      end: 'Apr 2023', // [EDIT — null = Present]
-      description: 'Focused on statistical modelling, data systems, and quantitative methods.', // [EDIT]
+      start: 'Sep 2024', // [EDIT]
+      end: 'Aug 2025', // [EDIT — null = Present]
+      description: 'Focus on statistical modelling, data systems, and quantitative methods.', // [EDIT]
+      notable_works: [
+      ],
+    },
+    {
+      id: 'edu-bachelors',
+      icon: 'ti ti-school',
+      education_title: 'Bachelors of Science (Honours)', // [EDIT]
+      major: 'Biochemistry', // [EDIT]
+      school: 'University of Calgary', // [EDIT]
+      start: 'Sep 2020', // [EDIT]
+      end: 'Apr 2024', // [EDIT — null = Present]
+      description: 'Focus on natural sciences - biochemistry + additional statistics and economics sources', // [EDIT]
       notable_works: [
         {
-          name: 'Capstone Project — Supply Chain Forecasting', // [EDIT]
+          name: 'Honours Thesis', // [EDIT]
           description: [
-            'Built a time-series demand model using ARIMA and XGBoost',
-            'Reduced forecast error by 18% vs the baseline model',
-            'Presented findings to a panel of industry judges',
+            'HDX-MS of GFP-tagged proteins isolated from mammalian cell culture'
           ],
         },
         {
-          name: 'Data Science Club', // [EDIT]
+          name: 'Canadian Organization of Undergraduate Research', // [EDIT]
           description: [
-            'Led weekly workshops on pandas and SQL fundamentals',
-            'Organized the annual data hackathon with 60+ participants',
+            'Raised +$2500 through grants and fund-raising efforts',
+            'Organized and hosted 3 research-training workshops for ~60 students across Canada',
           ],
         },
       ],
