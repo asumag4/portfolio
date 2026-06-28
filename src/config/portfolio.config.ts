@@ -60,7 +60,7 @@ export const portfolio: PortfolioConfig = {
       end: null, // null = Present
       location: 'Calgary, AB',
       summary:
-        'Developer consultant on Database Warehousing, Data Serving (ETL) and BI Reporting',
+        'Consultant / contractor for Database Warehousing, Data Serving (ETL), BI Reporting and Data Processes Engineering',
       bullets: [
           {
             text: 'Data Analyst & Architect for major Oil and Gas Producer',
@@ -106,7 +106,7 @@ export const portfolio: PortfolioConfig = {
       start: 'Apr 2025',
       end: 'Jul 2025',
       location: 'Calgary, AB',
-      summary: 'Analytics and reporting for operational, production and finance teams.',
+      summary: 'Analytics and reporting for operations, production and finance teams.',
       bullets: [
           'Developed production reports for oil and gas (O&G) exploration & producer - providing insight into daily production & sales volumes per well',
           'Sustainment of Financial / Accounting reporting for major O&G producer - providing high-level detail to international O&G operations',
@@ -215,7 +215,7 @@ export const portfolio: PortfolioConfig = {
   tagline: 'Production-grade ML pipeline forecasting oil & gas rig activity from 26 years of EIA data',
   emoji: '⚡',
   accent: '#00b4a0',
-  link: 'https://github.com/asumag4/energy-dbt-ai',
+  link: 'https://github.com/asumag4/energy_analytics',
   description: [
     'An end-to-end data engineering and ML platform that ingests U.S. Energy Information Administration (EIA) API v2 data across crude oil, natural gas, spot prices, and inventory — persisting 294,000+ records spanning 2000–2025 into a medallion-architecture PostgreSQL warehouse (bronze → silver → gold).',
     'Two OOP classes — IngestEIA and DBLoader — form the production data layer. IngestEIA handles paginated facet-chunked API fetching to stay within URL-length limits, while DBLoader drives dynamic table creation and upsert semantics via SQLAlchemy. dbt Core owns the silver-layer transformations: deduplication, wide pivots, and ML feature views.',
@@ -541,7 +541,7 @@ export const portfolio: PortfolioConfig = {
     // endpoint here (e.g. 'https://formspree.io/f/abcdwxyz').
     // While null, the form falls back to opening the visitor's
     // mail client instead.
-    formEndpoint: null,
+    formEndpoint: "https://formspree.io/f/xgojydbd",
     successMessage: 'Message sent — I’ll get back to you soon.',
     errorMessage: 'Something went wrong sending that. Email me directly instead?',
   },
