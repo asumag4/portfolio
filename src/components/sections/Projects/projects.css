@@ -203,6 +203,11 @@
   font-size: var(--text-sm);
 }
 
+.project-modal__repo-link {
+  margin-top: var(--space-2);
+  display: inline-flex;
+}
+
 .project-modal__section {
   display: flex;
   flex-direction: column;

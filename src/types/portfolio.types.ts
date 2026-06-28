@@ -98,6 +98,8 @@ export interface ProjectItem {
   image?: string;
   /** Optional per-project accent colour, falls back to theme primary */
   accent?: string;
+  /** Primary repository or live-demo URL, shown as a button in the modal header */
+  link?: string;
   /** One string per paragraph in the modal */
   description: string[];
   highlights?: string[];

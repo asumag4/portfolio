@@ -28,6 +28,17 @@ export function ProjectModal({ project, onClose }: ProjectModalProps): JSX.Eleme
                 {project.title}
               </h3>
               <p className="project-modal__tagline">{project.tagline}</p>
+              {project.link ? (
+                <a
+                  className="btn btn--ghost btn--sm project-modal__repo-link"
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Icon name="github" size={15} />
+                  View Repository
+                </a>
+              ) : null}
             </div>
           </header>
 
