@@ -524,7 +524,7 @@ export const portfolio: PortfolioConfig = {
    * RESUME — drop your PDF into /public as resume.pdf
    * ---------------------------------------------------------------- */
   resume: {
-    pdfPath: '/resume.pdf',
+    pdfPath: 'resume.pdf',
     downloadName: 'Arthur-Sumague-Resume.pdf',
     lastUpdated: 'June 2026', // [EDIT]
   },
